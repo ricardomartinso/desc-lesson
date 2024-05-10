@@ -9,8 +9,8 @@ import IconButton from '@mui/material/IconButton';
  
 function Header() {
     return (
-        <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static">
+        <Box sx={{ flexGrow: 1 }} color={'black'}>
+        <AppBar position="static" color='secondary'>
           <Toolbar>
             <IconButton
               size="large"
@@ -23,7 +23,7 @@ function Header() {
               <MenuIcon />
               */}
             </IconButton>
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
               Gerenciamento de Projetos
             </Typography>
           </Toolbar>

@@ -80,7 +80,10 @@ const CriarTarefa = ({handleClose, tarefas, setTarefas}) =>{
           <Grid container spacing={2} mt={1}>
             <Grid item xs={3}>  
               <FormControl>
-                <Input id="tarefa_inicio" type="date" aria-describedby="tarefa_inicio_helper_text" value={inicioTarefa} onChange={e => { setInicioTarefa(e.target.value) }}
+                <Input id="tarefa_inicio" type="date" aria-describedby="tarefa_inicio_helper_text" value={inicioTarefa} onChange={e => { 
+                  console.log(e.target.value)
+                  setInicioTarefa(e.target.value) 
+                }}
                   sx={{
                     color:'rgba(0, 0, 0, 0.6)',
                     fontWeight: 400,
